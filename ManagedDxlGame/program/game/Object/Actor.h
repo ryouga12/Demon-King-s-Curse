@@ -7,10 +7,8 @@ public:
 	tnl::Vector3 pos = {};
 	
 
-
-
-
 protected:
+
 	//名前
 	std::string name = "";
 	//装備,アイテムによる追加ステータス
