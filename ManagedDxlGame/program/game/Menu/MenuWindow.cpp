@@ -44,10 +44,10 @@ MenuWindow::MenuWindow(int menu_window_x, int menu_window_y, int menu_window_wid
 	MenuElement = elements;
 	elements_num_ = elements_num;
 	string_Color_Black = GetColor(0, 0, 0);
-	cursor_gh = gManager->LoadGraphEX("graphics/menuCursor.png");
+	cursor_gh = gManager->LoadGraphEX("graphics/cur_sannkaku2.png");
 	coursorX = MenuElement[0].x - 20;
 
-	selectItemBackGh = gManager->LoadGraphEX("graphics/selectItemBack.png");
+	/*selectItemBackGh = gManager->LoadGraphEX("graphics/selectItemBack.png");*/
 }
 
 MenuWindow::~MenuWindow()
@@ -93,8 +93,14 @@ void MenuWindow::Read()
 		}
 	}
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, 80);
-	DrawRotaGraph3(coursorX + 10, coursorY - 15, 0, 0, backGhwidth, 1, 0, selectItemBackGh, true);
+	/*DrawRotaGraph3(coursorX + 10, coursorY - 15, 0, 0, backGhwidth, 1, 0, selectItemBackGh, true);*/
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 255);
+
+	for (int i = 0; i < elements_num_; i++) {
+		DrawFormatString(MenuElement[i].x, MenuElement[i].y,-1, MenuElement[i].name.c_str());
+	}
+	DrawRotaGraph(coursorX, coursorY, 0.2, 0, cursor_gh, true);
+
 	
 }
 

@@ -48,6 +48,7 @@ public:
 	bool secondMenuFlag = false;
 	bool manageSelectFlag = true;//ReadŠÖ”‚ÌSelectNum‚ğ“®‚©‚·‚©‚Ç‚¤‚© true‚È‚ç“®‚©‚·
 
+	
 	MenuWindow(int menu_window_x, int menu_window_y, int menu_window_width, int menu_window_height, std::string gh_path, MenuElement_t* elements, int elements_num, double BackWidth);
 	~MenuWindow();
 
@@ -57,6 +58,10 @@ public:
 	void Read();
 
 	void All();
+
+	int getSelectNum() { return Select_Num;}
+	
+
 
 private:
 
