@@ -1,3 +1,7 @@
+///
+///MapChipƒNƒ‰ƒX
+///
+
 #pragma once
 #include "../dxlib_ext/dxlib_ext.h"
 #include"../Manager/Camera.h"
@@ -5,6 +9,7 @@
 
 class MapChip {
 public:
+	MapChip() {};
 	MapChip(const tnl::Vector3& pos , int gfx_hdl);
 	void Update(float delta_time);
 	void Draw(const Camera_& camera);
