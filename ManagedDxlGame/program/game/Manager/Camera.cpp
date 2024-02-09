@@ -4,7 +4,7 @@ Camera_::Camera_()
 {
 
 }
-void Camera_::update(tnl::Vector3 target_pos)
+void Camera_::update(tnl::Vector3 target_pos , int MAP_WIDTH ,int MAP_HEIGHT)
 {
     // カメラの中心座標を計算
     tnl::Vector3 camera_center = tnl::Vector3(DXE_WINDOW_WIDTH >> 1, DXE_WINDOW_HEIGHT >> 1, 0);
