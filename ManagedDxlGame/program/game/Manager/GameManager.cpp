@@ -8,7 +8,7 @@ GameManager::GameManager()
 
 GameManager::~GameManager()
 {
-
+	
 }
 
 void GameManager::Update()
@@ -40,3 +40,4 @@ int GameManager::LoadGraphEX(std::string gh)
 
 	return ghmap[gh];
 }
+
