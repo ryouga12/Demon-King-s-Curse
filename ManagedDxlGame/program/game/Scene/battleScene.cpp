@@ -1,6 +1,7 @@
 #include "battleScene.h"
 #include"../Manager/SceneManager.h"
 #include"mapScene.h"
+#include"resultScene.h"
 
 BattleScene::BattleScene()
 {
@@ -21,7 +22,7 @@ bool BattleScene::seqIdle(float delta_time)
 {
 	if (tnl::Input::IsKeyDownTrigger(eKeys::KB_RETURN)) {
 		auto mgr = SceneManager::GetInstance();
-		mgr->changeScene(new MapScene());
+		mgr->changeScene(new ResultScene());
 	}
 	return true;
 }

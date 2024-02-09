@@ -11,12 +11,20 @@ TittleScene::TittleScene()
 	tittle_ghdl = gManager->LoadGraphEX("graphics/tittle_background.png");
 
 	enter_gh = gManager->LoadGraphEX("graphics/button_Enter.png");
+	 
 
+}
+
+TittleScene::~TittleScene()
+{
+	delete gManager;
 }
 
 void TittleScene::Update(float delta_time)
 {
 	sequence_.update(delta_time);
+
+	
 }
 
 void TittleScene::Draw()
@@ -34,11 +42,14 @@ void TittleScene::Draw()
 	DrawRotaGraph(tittle_Menu->menu_x + 125, tittle_Menu->menu_y + 25, 1, 0, enter_gh, true);
 	DrawStringEx(tittle_Menu->menu_x + 10, tittle_Menu->menu_y + 50, String_Color_Black, "Enterを押してゲームスタート");
 
+	
+
 
 }
 
 bool TittleScene::seqIdle(float delta_time)
 {
+
 
 	if (tnl::Input::IsKeyDownTrigger(eKeys::KB_RETURN)) {
 		auto mgr = SceneManager::GetInstance();

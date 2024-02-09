@@ -14,4 +14,8 @@ public:
 private:
 	tnl::Sequence<BattleScene> sequence_ = tnl::Sequence<BattleScene>(this, &BattleScene::seqIdle);
 	bool seqIdle(float delta_time);
+
+	
+
+
 };

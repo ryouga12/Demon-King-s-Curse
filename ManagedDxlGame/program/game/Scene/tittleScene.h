@@ -10,14 +10,19 @@
 #include"village.h"
 #include"../Manager/GameManager.h"
 #include"../Menu/MenuWindow.h"
+#include"../Item/Item.h"
 
-class TittleScene : public BaseScene {
+class TittleScene : public BaseScene  {
 public:
 
 	TittleScene();
+	~TittleScene();
 
 	void Update(float delta_time) override;
 	void Draw()override;
+
+	
+
 
 private:
 	tnl::Sequence<TittleScene> sequence_ = tnl::Sequence<TittleScene>(this, &TittleScene::seqIdle);
@@ -33,19 +38,15 @@ private:
 	//enterボタン
 	int enter_gh = 0;
 
+	
 
 
-
-
-
-
-
-	//-----------------------------------------------------------------------------
-	//ポインタ
-	//
+//------------------------------------------------------------------------------------------------------------------------	
+//ポインタ
 
 	GameManager* gManager = nullptr;
-
 	Shared<Menu> tittle_Menu = nullptr;
 
+	
+	
 };
