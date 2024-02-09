@@ -39,6 +39,9 @@
     <Filter Include="program\[003] game\Map">
       <UniqueIdentifier>{f8ddec63-3644-4e1a-8a40-8e3c37f060f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="program\[003] game\Item">
+      <UniqueIdentifier>{89da45aa-9f52-497a-bbe2-8688c35539cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ManagedDxlGame.cpp">
@@ -214,6 +217,21 @@
     </ClCompile>
     <ClCompile Include="program\game\Manager\Camera.cpp">
       <Filter>program\[003] game\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\Item\Weapon.cpp">
+      <Filter>program\[003] game\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\Item\Item.cpp">
+      <Filter>program\[003] game\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\Item\Inventory.cpp">
+      <Filter>program\[003] game\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\Item\ItemBase.cpp">
+      <Filter>program\[003] game\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\Item\WeaponShop.cpp">
+      <Filter>program\[003] game\Item</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -424,6 +442,21 @@
     </ClInclude>
     <ClInclude Include="program\game\Manager\Camera.h">
       <Filter>program\[003] game\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\Item\Weapon.h">
+      <Filter>program\[003] game\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\Item\Item.h">
+      <Filter>program\[003] game\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\Item\Inventory.h">
+      <Filter>program\[003] game\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\Item\ItemBase.h">
+      <Filter>program\[003] game\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\Item\WeaponShop.h">
+      <Filter>program\[003] game\Item</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

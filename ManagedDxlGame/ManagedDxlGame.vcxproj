@@ -175,6 +175,11 @@
     <ClCompile Include="program\dxlib_ext\dxlib_ext_texture.cpp" />
     <ClCompile Include="program\dxlib_ext\OBJLoader.cpp" />
     <ClCompile Include="program\game\gm_main.cpp" />
+    <ClCompile Include="program\game\Item\Inventory.cpp" />
+    <ClCompile Include="program\game\Item\Item.cpp" />
+    <ClCompile Include="program\game\Item\ItemBase.cpp" />
+    <ClCompile Include="program\game\Item\Weapon.cpp" />
+    <ClCompile Include="program\game\Item\WeaponShop.cpp" />
     <ClCompile Include="program\game\Manager\Camera.cpp" />
     <ClCompile Include="program\game\Manager\GameManager.cpp" />
     <ClCompile Include="program\game\Manager\SceneManager.cpp" />
@@ -241,6 +246,11 @@
     <ClInclude Include="program\dxlib_ext\example\dxlib_ext_example_utl_single_oscillationy.h" />
     <ClInclude Include="program\dxlib_ext\OBJLoader.h" />
     <ClInclude Include="program\game\gm_main.h" />
+    <ClInclude Include="program\game\Item\Inventory.h" />
+    <ClInclude Include="program\game\Item\Item.h" />
+    <ClInclude Include="program\game\Item\ItemBase.h" />
+    <ClInclude Include="program\game\Item\Weapon.h" />
+    <ClInclude Include="program\game\Item\WeaponShop.h" />
     <ClInclude Include="program\game\Manager\Camera.h" />
     <ClInclude Include="program\game\Manager\GameManager.h" />
     <ClInclude Include="program\game\Manager\SceneManager.h" />
